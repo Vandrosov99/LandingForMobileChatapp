@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 body {
-	
+
 	padding: 0;
 	margin: 0;
-	
+
 }
 
 .clearfix:after {
-	content:'';
+	content: '';
 	display: table;
 	width: 100%;
 	clear: both;
-} 
+}
 
-/* Шапка */
+/* header */
 header {
 	background: url(../img/heading/fon.jpg) no-repeat center top;
 	height: 100vh;
 	background-size: cover;
-	width: 1668px;
+	width: 100%;
 }
 
 .container {
-	width: 1668px;
+	width: 1100px;
+	margin: 0 auto;
 }
 
-/* Логотип */
+
 .logo {
 	font-family: 'Lato', sans-serif;
 	font-size: 25px;
@@ -36,8 +37,7 @@ header {
 	padding-left: 20px;
 }
 
-/* Список */
-
+/* nav */
 .menubar {
 	margin-left: 0;
 	margin-right: 0;
@@ -47,8 +47,8 @@ header {
 
 .menu {
 	display: block;
-	
-	margin-left:  120px;
+
+	margin-left: 120px;
 }
 
 .menu li {
@@ -66,7 +66,8 @@ header {
 	font-family: 'Lato', sans-serif;
 
 }
-/* Текст в середине */
+
+/* text in inside */
 
 .titles_first {
 	font-size: 70px;
@@ -79,19 +80,20 @@ header {
 }
 
 .titles p {
-	color:#fff;
+	color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	padding-left: 180px;
 }
 
-/* Кнопка */
+/* btn ```` s */
 .buttons {
 	padding-top: 50px;
 }
+
 .button {
-	color:#dc2b56;
+	color: #dc2b56;
 	background: #fff;
 	border-radius: 15px;
 	width: 240px;
@@ -104,7 +106,7 @@ header {
 	margin-left: 180px;
 }
 
-/* Картинка в шапке */
+/* img for nav */
 
 .img {
 	float: right;
@@ -112,16 +114,16 @@ header {
 	width: 400px;
 
 }
-/*// Конец шапки  //*/
 
-/* -- Второй блок--- */
 
-	/*Наложение две картинки друг на друга №1  */
 
+/* Second section  */
+/* наложение каринок img in img (for) */
 .image {
 
 	position: relative;
 }
+
 .mess {
 	top: 60px;
 	left: 55px;
@@ -133,73 +135,73 @@ header {
 	top: 145px;
 	z-index: 5;
 }
-/* Текст справо от картинки №1 */
-	.title {
-		padding-top: 300px;
+
+/* text in right side */
+.title {
+	padding-top: 300px;
 }
 
-	.tochka {
-		color: #e32638;
-		text-decoration: none;
-	}
+.tochka {
+	color: #e32638;
+	text-decoration: none;
+}
 
-	.title h2 {
-		font-size: 70px;
-		font-weight: 900;
-		color: #363636;
-		font-family: 'Lato', sans-serif;
-	}
+.title h2 {
+	font-size: 70px;
+	font-weight: 900;
+	color: #363636;
+	font-family: 'Lato', sans-serif;
+}
 
-	.title p {
-		margin-right: 60px;
-		padding-bottom: 60px;
-		font-weight: 400;
-		font-family: 'Lato', sans-serif;
-		color: #808080;
-		font-size: 20px;
+.title p {
+	margin-right: 60px;
+	padding-bottom: 60px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	color: #808080;
+	font-size: 20px;
 
-	}
+}
 
-	/* Текстслева от картинки №2 */
+/* text in left side for img */
+.title_text {
+	padding-top: 260px;
+	padding-left: 90px;
+}
 
-	.title_text {
-		padding-top: 260px;
-		padding-left: 90px;
-	}
+.title_text h2 {
+	font-size: 70px;
+	font-weight: 900;
+	color: #363636;
+	font-family: 'Lato', sans-serif;
+}
 
-	.title_text h2 {
-		font-size: 70px;
-		font-weight: 900;
-		color: #363636;
-		font-family: 'Lato', sans-serif;
-	}
+.title_text p {
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	color: #808080;
+	font-size: 20px;
 
-	.title_text p {
-		font-weight: 400;
-		font-family: 'Lato', sans-serif;
-		color: #808080;
-		font-size: 20px;
-		
-	}
+}
 
-	/* Картинки №2 */
-	.images {
-		float: right;
-		padding-top: 95px;
-		position: relative;
-		padding-left: 120px;
-	}
+/* images */
+.images {
+	float: right;
+	padding-top: 95px;
+	position: relative;
+	padding-left: 120px;
+}
 
-	.groups {
+.groups {
 	top: 60px;
 	z-index: 2;
 	right: 210px;
 }
 
-	.contacts {
+.contacts {
 	left: 6px;
 	right: 3px;
 	top: 140px;
-	z-index: 5 ;
-	padding: 
+	z-index: 5;
+	padding:
 }
