@@ -51,11 +51,13 @@ header .nav ul li {
   margin-right: 25px;
 }
 .current {
-  background: rgb(196, 35, 7);
+  background: rgba(190, 17, 17, 0.514);
   padding: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .current:hover {
-  background: rgb(202, 73, 50);
+  color: #b64042;
+  background: #fff;
 }
 /* showcase */
 .showcase-content {
@@ -66,9 +68,23 @@ header .nav ul li {
 .showcase-content .left {
   flex: 2;
   padding: 20px;
-  margin: 150px 0;
+  margin-top: 250px;
 }
-
+.showcase-content .left h1 {
+  /* line-height: 2rem; */
+  font-size: 72px;
+  margin-bottom: 15px;
+}
+.showcase-content .left p span {
+  /* line-height: 2rem; */
+  font-size: 27px;
+  font-weight: 700;
+  /* background: black; */
+}
+.showcase-content .left p {
+  font-size: 20px;
+  margin-bottom: 120px;
+}
 .showcase-content .right {
   flex: 1;
   padding: 12px;
@@ -76,4 +92,18 @@ header .nav ul li {
 }
 .showcase-content .right img {
   height: 700px;
+}
+.showcase-content .left .btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #b64042;
+  background: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.showcase-content .left .btn:hover {
+  color: #800329;
+  background: black;
 }
