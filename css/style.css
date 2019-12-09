@@ -10,66 +10,84 @@ body {
   font-family: "Lato", sans-serif;
   color: #393939;
   font-weight: 400;
+  /* position: relative; */
 }
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  /* overflow: hidden; */
 }
 
 /* header */
 
 header {
+  /* background: #d90646; */
+}
+.showcase-content {
   background: url("../img/heading/fon.jpg") no-repeat;
   color: #fff;
   margin-bottom: 55px;
 }
-.logo {
-  font-size: 50px;
+#nav ul li a:hover {
+  color: black;
 }
-.nav {
+#nav .logo {
+  font-size: 50px;
+  color: #fff;
+}
+#nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #d90646;
 }
-ul {
+#nav ul {
   display: flex;
   flex-direction: row;
   height: inherit;
 }
-header .nav ul li a {
+#nav ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-header .nav ul li {
+#nav ul li {
   list-style: none;
   font-size: 18px;
   margin-left: 25px;
   margin-right: 25px;
 }
-.current {
+/* .current {
   background: rgba(190, 17, 17, 0.514);
   padding: 25px;
   transition: all 0.3s ease-in-out;
-}
-.current:hover {
+} */
+/* .current:hover {
   color: #b64042;
   background: #fff;
-}
+} */
 /* showcase */
 .showcase-content {
   display: flex;
   flex-direction: row;
+  height: 700px;
 }
 
 .showcase-content .left {
   flex: 2;
   padding: 20px;
-  margin-top: 210px;
+  margin-top: 150px;
 }
 .showcase-content .left h1 {
   /* line-height: 2rem; */
@@ -89,7 +107,7 @@ header .nav ul li {
 .showcase-content .right {
   flex: 1;
   padding: 12px;
-  margin-top: 125px;
+  margin-top: 50px;
 }
 .showcase-content .right img {
   height: 700px;
@@ -363,7 +381,9 @@ img {
 
 /* SUBSCRIBE SECTION */
 .subscribe {
-  margin: 100px 0;
+  margin-top: 100px 0;
+  border-bottom: #d1c4c4 1px solid;
+  padding-bottom: 100px;
 }
 .subscribe h1 {
   margin-bottom: 35px;
@@ -445,4 +465,67 @@ img {
   right: 0px;
   top: 0px;
   background: linear-gradient(to bottom, #d90646, #eb3f2d);
+}
+/* download */
+
+.downloadSection {
+  /* margin: 100px 0; */
+  border-bottom: #d1c4c4 1px solid;
+}
+.downloadLogo {
+  /* margin-top: 100px; */
+  text-align: center;
+}
+
+.downloadSection h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.downloadSection h2 span {
+  font-size: 60px;
+  color: red;
+}
+.downloadSection p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.downloadSection {
+  padding: 80px 0;
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.flex_fot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_fot .left .nav-fot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-fot li {
+  list-style: none;
+  margin: 15px 25px;
+  color: #fff;
+}
+.nav-fot li a {
+  text-decoration: none;
+  color: #686868;
+}
+.right li {
+  list-style: none;
+}
+footer {
+  margin-bottom: 20px;
+}
+.nav-fot li a:hover {
+  color: red;
 }
