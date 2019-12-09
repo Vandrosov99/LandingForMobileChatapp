@@ -12,18 +12,19 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
-  /* height: 100%; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* header */
 
 header {
-  background: url("../img/heading/fon.jpg");
+  background: url("../img/heading/fon.jpg") no-repeat;
   color: #fff;
+  margin-bottom: 55px;
 }
 .logo {
   font-size: 50px;
@@ -68,7 +69,7 @@ header .nav ul li {
 .showcase-content .left {
   flex: 2;
   padding: 20px;
-  margin-top: 250px;
+  margin-top: 210px;
 }
 .showcase-content .left h1 {
   /* line-height: 2rem; */
@@ -88,7 +89,7 @@ header .nav ul li {
 .showcase-content .right {
   flex: 1;
   padding: 12px;
-  margin-top: 140px;
+  margin-top: 125px;
 }
 .showcase-content .right img {
   height: 700px;
@@ -200,7 +201,9 @@ header .nav ul li {
 }
 
 /* third */
-
+.third {
+  margin-bottom: 100px;
+}
 .flex_out {
   display: flex;
   flex-direction: column;
@@ -270,4 +273,176 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+/* section four */
+.four {
+  position: relative;
+  width: 100%;
+  height: 518px;
+  margin-top: 150px;
+  margin-bottom: 160px;
+  background: linear-gradient(to bottom, #d90646, #eb3f2d);
+}
+.four .flex_container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 518px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+}
+.four .large {
+  position: relative;
+}
+.centr {
+  position: absolute;
+  top: -98px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.four .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.four .items {
+  width: 200px;
+  height: 200px;
+  margin: 25px;
+}
+.four .items:nth-child(1) .box {
+  text-align: left;
+}
+.four .items:nth-child(2) .box {
+  text-align: left;
+}
+
+.four .items:nth-child(4) .box {
+  text-align: right;
+  /* background: black; */
+}
+.four .items:nth-child(5) .box {
+  text-align: right;
+  /* background: black; */
+}
+.opacity {
+  position: absolute;
+  top: 0px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 14px;
+  opacity: 0.8;
+  z-index: 3;
+  height: 520px;
+  width: 290px;
+  background: black;
+}
+.play {
+  position: absolute;
+  top: 215px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+/* SUBSCRIBE SECTION */
+.subscribe {
+  margin: 100px 0;
+}
+.subscribe h1 {
+  margin-bottom: 35px;
+  font-size: 60px;
+  color: #363636;
+  text-align: center;
+}
+
+.subscribe h1 span {
+  font-size: 60px;
+  color: #e32638;
+}
+
+.subscribe p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.form {
+  text-align: center;
+  /* position: relative; */
+}
+
+.subscribe .btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(to bottom, #d90646, #eb3f2d);
+  padding: 10px 40px;
+  border-radius: 20px;
+  /* position: absolute;
+  top: 0; */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.subscribe .btn:hover {
+  color: #800329;
+  background: black;
+}
+
+#subscribeInput {
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  height: 50px;
+  width: 100px;
+  background: #f8f8f8;
+  border: 0px;
+  padding: 0px 190px 0px 28px;
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.subscribeForm {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.form-control {
+  display: block;
+  /* width: 100%; */
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.subscribeBtn {
+  position: absolute;
+  border-radius: 50px;
+  height: 50px;
+  width: 180px;
+  color: white;
+  border: 0px;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(to bottom, #d90646, #eb3f2d);
 }
