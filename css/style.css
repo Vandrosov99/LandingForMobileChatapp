@@ -168,7 +168,7 @@ header .nav ul li {
   flex: 1;
   /* align-content: center; */
 }
-.second ..content_two .right h1 {
+.second .content_two .right h1 {
   color: #363636;
   font-size: 44px;
   margin-bottom: 25px;
@@ -197,4 +197,77 @@ header .nav ul li {
 .second {
   padding: 10px 0px 40px 0px;
   border-bottom: #d1c4c4 1px solid;
+}
+
+/* third */
+
+.flex_out {
+  display: flex;
+  flex-direction: column;
+}
+.third .flex_out h1 {
+  color: #363636;
+  font-size: 44px;
+  text-align: center;
+  padding: 60px;
+}
+
+.third .flex_out .items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* text-align: center; */
+}
+.third .flex_out h1 span {
+  color: #e32638;
+  font-size: 60px;
+}
+.third .flex_out span {
+  color: #e32638;
+  font-size: 15px;
+}
+.third .flex_out .blox_text {
+  border: 1px solid #e0e0e0e0;
+  margin: 15px 15px 0 15px;
+  padding: 20px;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.third .flex_out .blox_text p {
+  color: #999999;
+  font-size: 15px;
+}
+.third .flex_out .blox_text p:first-child {
+  margin-bottom: 20px;
+}
+.third .flex_out .items .blocks:nth-child(2) .blox_text {
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-bottom: 55px;
+
+  /*margin-right: 25px;
+  margin-left: 25px; */
+
+  /* margin: 0 35px 25px 15px; */
+}
+/* .third .flex_out .items .blocks:nth-child(2) .blox_text::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 235px;
+  border: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+} */
+img {
+  margin: 15px;
+}
+.info {
+  /* margin: -20px; */
+  display: inline-block;
+}
+.lower {
+  /* margin-bottom: 100px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
